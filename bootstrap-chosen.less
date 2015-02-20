@@ -8,6 +8,7 @@
 //
 
 @import "bootstrap-chosen-variables.less";
+@import "bootstrap-chosen-mixins.less";
 
 .chosen-select { width: 100%; }
 .chosen-select-deselect { width: 100%; }
@@ -123,6 +124,19 @@
     span {
       background: url("@{chosen-sprite-path}") no-repeat -22px -3px;
     }
+  }
+
+
+  .has-error & {
+    .chosen-control-validation(@state-danger-text; @state-danger-text; @state-danger-bg);
+  }
+
+  .has-success & { 
+    .chosen-control-validation(@state-success-text; @state-success-text; @state-success-bg);
+  }
+
+  .has-warning & {
+    .chosen-control-validation(@state-warning-text; @state-warning-text; @state-warning-bg);
   }
 }
 
@@ -457,6 +471,7 @@
     }
   }
 }
+
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 2dppx) {
   .chosen-rtl .chosen-search input[type="text"],
