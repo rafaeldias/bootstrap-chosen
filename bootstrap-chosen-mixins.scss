@@ -1,0 +1,23 @@
+// bootstrap-chosen-mixins.scss
+//
+// An alternate stylesheet for Chosen (http://harvesthq.github.com/chosen/).
+// This one is supposed to integrate better with Bootstrap.
+//
+// Submit bugfixes to: http://github.com/alxlit/bootstrap-chosen
+//
+
+@mixin chosen-control-validation($text-color: $input-color, $border-color: $input-border, $background-color: $input-bg) {
+  .chosen-single,
+  .chosen-choices {
+    border-color: $border-color;
+    @include box-shadow(inset 0 1px 1px rgba(0,0,0,.075));
+  }
+  &.chosen-container-active {
+    .chosen-single,
+    .chosen-choices {
+      border-color: darken($border-color, 10%);
+      $shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 6px lighten($border-color, 20%);
+      @include box-shadow($shadow);
+    }
+  }
+}

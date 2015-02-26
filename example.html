@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Bootstrap + Chosen</title>
-    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="bootstrap.css" />
     <style>
       body { margin-bottom: 144px; }
       header { margin: 72px 0 36px; }
@@ -32,7 +32,7 @@
 
       <div class="row">
         <div class="col-lg-3">
-          <div class="form-group has-error has-feedback">
+          <div class="form-group has-error">
             <label class="control-label">Input with error</label>
             <select class="form-control">
               <option>Ordinary select box</option>
@@ -40,7 +40,7 @@
           </div>
         </div>
         <div class="col-lg-3">
-          <div class="form-group has-error has-feedback">
+          <div class="form-group has-error">
             <label class="control-label">Input with error</label>
             <select data-placeholder="Choose a Country" class="chosen-select form-control" tabindex="2">
               <option value=""></option>
@@ -288,23 +288,19 @@
               <option value="Zambia">Zambia</option>
               <option value="Zimbabwe">Zimbabwe</option>
             </select>
-            <span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
-            <span id="inputError2Status" class="sr-only">(error)</span>
           </div>
         </div>
       </div>
 
       <div class="row">
         <div class="col-lg-3">
-          <div class="form-group has-success has-feedback">
+          <div class="form-group has-success">
             <label class="control-label">Input with success</label>
             <input type="text" class="form-control" value="Ordinary text box" />
-            <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
-            <span id="inputSucces42Status" class="sr-only">(success)</span>
           </div>
         </div>
         <div class="col-lg-3"> 
-          <div class="form-group has-success has-feedback">
+          <div class="form-group has-success">
             <label class="control-label">Input with success</label>
             <select data-placeholder="Choose a Country" class="chosen-select form-control" multiple tabindex="2">
               <option value=""></option>
@@ -552,16 +548,14 @@
               <option value="Zambia">Zambia</option>
               <option value="Zimbabwe">Zimbabwe</option>
             </select>
-            <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
-            <span id="inputSuccess4Status" class="sr-only">(success)</span>
           </div>
         </div>
       </div>
 
       <div class="row">
         <div class="col-lg-3"> 
-          <div class="form-group has-warning has-feedback">
-            <label class="control-label">Input with warning</label>
+          <div class="form-group has-warning">
+            <label class="control-label">Input with warning and right to left</label>
             <select data-placeholder="Choose a Country" class="chosen-select chosen-rtl form-control" multiple tabindex="2">
               <option value=""></option>
               <option value="United States">United States</option>
@@ -808,13 +802,11 @@
               <option value="Zambia">Zambia</option>
               <option value="Zimbabwe">Zimbabwe</option>
             </select>
-            <span class="glyphicon glyphicon-warning-sign form-control-feedback" aria-hidden="true"></span>
-            <span id="inputWarning2Status" class="sr-only">(warning)</span>
           </div>
         </div>
         <div class="col-lg-3">
-          <div class="form-group has-warning has-feedback">
-            <label class="control-label">Input with warning</label>
+          <div class="form-group has-warning">
+            <label class="control-label">Input with warning and right to left</label>
             <select data-placeholder="Choose a Country" class="chosen-select chosen-rtl form-control" tabindex="2">
               <option value=""></option>
               <option value="United States">United States</option>
@@ -1061,8 +1053,6 @@
               <option value="Zambia">Zambia</option>
               <option value="Zimbabwe">Zimbabwe</option>
             </select>
-            <span class="glyphicon glyphicon-warning-sign form-control-feedback" aria-hidden="true"></span>
-            <span id="inputWarning2Status" class="sr-only">(warning)</span>
           </div>
         </div>
       </div>
